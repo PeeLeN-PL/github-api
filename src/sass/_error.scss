@@ -1,0 +1,22 @@
+.error {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background: #dcb7b7;
+    border-top: 1px solid #c18989;
+    color: #775353;
+    padding: 0 20px;
+
+    &__message {
+        font-weight: bold;
+    }
+
+    &__counter {
+        color: #775353;
+    }
+}

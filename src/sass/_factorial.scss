@@ -1,0 +1,41 @@
+.factorial {
+    &__result {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        color: #61962b;
+        background-color: #e7f0de;;
+        border: 1px solid #7bbb3b;
+        margin: 30px 0px;
+        padding: 0px 20px;
+        width: 100%;
+    }
+    &__history {
+        &__label {
+            font-size: 18px;
+        }
+        &__list {
+            font-size: 14px;
+            &__item {
+                &__math-data {
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 6px;
+                }
+                &__number {
+                    margin-right: 40px;
+                    color: #717171;
+                    width: 40%;
+                }
+                &__result {
+                    color: #5694e2;
+                    width: 60%;
+                }
+                &__date {
+                    font-size: 0.8em;
+                    color: #a5a5a5;
+                }
+            }
+        }
+    }
+}

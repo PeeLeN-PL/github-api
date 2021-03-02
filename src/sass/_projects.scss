@@ -1,0 +1,74 @@
+.projects {
+    &__form {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        font-size: 14px;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        line-height: 1em;
+
+        &__label {
+            font-size: 18px;
+
+            &__user {
+                color: $color__primary
+            }
+        }
+
+        &__items {
+            &__item {
+                &__section {
+                    &--left {
+                        flex: 1 1;
+                    }
+
+                    &--right {
+                        flex: 0 1;
+                    }
+                }
+
+                &__name {
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    margin-bottom: 10px;
+                }
+
+                &__update-at {
+                    font-size: 0.7em;
+                    color: #b3b3b3;
+                }
+
+                &__button {
+                    background-color: $color__primary;
+                    cursor: pointer;
+                    font-size: 0.8em;
+                    padding: 10px 0px;
+                    text-align: center;
+                    color: #fff;
+                    border-radius: 3px;
+                    width: 110px;
+                    display: block;
+
+                    &:hover {
+                        background-color: darken($color__primary, 5%);
+                    }
+                }
+
+                &__commits {
+                    width: 100%;
+                    list-style: square;
+                    margin-top: 10px;
+                    font-size: 0.8em;
+
+                    li {
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
