@@ -67,7 +67,7 @@ const List = (props) => {
                             return <li className="projects__list__items__item list__item" key={`projects__${item.created_at}`}>
                                 <div className="projects__list__items__item__section--left">
                                     <div className="projects__list__items__item__name">{item.name}</div>
-                                    <div className="projects__list__items__item__update-at">{item.updated_at}</div>
+                                    <div className="projects__list__items__item__update-at">{new Date(item.updated_at).toLocaleString()}</div>
                                 </div>
                                 <div className="projects__list__items__item__section--right">
                                     {commits[item.id] === undefined ? <span onClick={() => getCommits(item.commits_url.replace('{/sha}', ''), item.id)} className="projects__list__items__item__button">pobierz commity</span> : null}
